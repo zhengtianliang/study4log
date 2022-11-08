@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="10c1d8fd-0859-4768-8289-6be2a709b4be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j/src/main/java/com/zheng/Log4jTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jcl/jcl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jcl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jcl/src/main/java/com/zheng/JCLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jcl/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log4j/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logback/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logback/src/main/java/com/zheng/LogbackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logback/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logback/src/main/resources/logback111.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slf4j/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slf4j/slf4j.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/CommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Log4BridgeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Slf4jTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slf4j/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log4j/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j/src/main/java/com/zheng/Log4jTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/log4j/src/main/java/com/zheng/Log4jTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j/target/classes/com/zheng/Log4jTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/log4j/target/classes/com/zheng/Log4jTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +44,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -46,24 +68,30 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jul/src/main/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/logback/src/main/resources" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\ruanjian\idea\file\study4log\logback\src\main\resources" />
+      <recent name="D:\java\ruanjian\idea\file\study4log\slf4j\src\main\resources" />
+      <recent name="D:\java\ruanjian\idea\file\study4log\jcl\src\main\resources" />
       <recent name="D:\java\ruanjian\idea\file\study4log\jul\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Log4jTest.testQuick">
-    <configuration name="JULTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zheng.JULTest" />
-      <module name="jul" />
+  <component name="RunManager" selected="JUnit.LogbackTest.testQuick">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zheng.Test" />
+      <module name="slf4j" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zheng.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,33 +99,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Log4jTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="log4j" />
+    <configuration name="JCLTest.testQuick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jcl" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zheng.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zheng" />
-      <option name="MAIN_CLASS_NAME" value="com.zheng.Log4jTest" />
+      <option name="MAIN_CLASS_NAME" value="com.zheng.JCLTest" />
+      <option name="METHOD_NAME" value="testQuick" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Log4BridgeTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="slf4j" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zheng" />
+      <option name="MAIN_CLASS_NAME" value="com.zheng.Log4BridgeTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Log4jTest.testQuick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="log4j" />
+    <configuration name="LogbackTest.testQuick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="logback" />
+      <option name="PACKAGE_NAME" value="com.zheng" />
+      <option name="MAIN_CLASS_NAME" value="com.zheng.LogbackTest" />
+      <option name="METHOD_NAME" value="testQuick" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Slf4jTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="slf4j" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zheng.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zheng" />
-      <option name="MAIN_CLASS_NAME" value="com.zheng.Log4jTest" />
-      <option name="METHOD_NAME" value="testQuick" />
+      <option name="MAIN_CLASS_NAME" value="com.zheng.Slf4jTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,9 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Log4jTest.testQuick" />
-        <item itemvalue="JUnit.Log4jTest.test1" />
-        <item itemvalue="Application.JULTest" />
+        <item itemvalue="JUnit.LogbackTest.testQuick" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.Log4BridgeTest.test1" />
+        <item itemvalue="JUnit.Slf4jTest.test1" />
+        <item itemvalue="JUnit.JCLTest.testQuick" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +178,42 @@
       <option name="presentableId" value="Default" />
       <updated>1658327482283</updated>
       <workItem from="1658327487675" duration="605000" />
-      <workItem from="1658328150135" duration="1363000" />
+      <workItem from="1658328150135" duration="1705000" />
+      <workItem from="1658460345187" duration="27000" />
+      <workItem from="1658589171601" duration="1205000" />
+      <workItem from="1658676683268" duration="868000" />
+      <workItem from="1658756151329" duration="3300000" />
+      <workItem from="1658843293920" duration="600000" />
+      <workItem from="1659537310841" duration="1338000" />
+      <workItem from="1659621786753" duration="4649000" />
+      <workItem from="1659797068760" duration="162000" />
+      <workItem from="1660138547359" duration="1203000" />
+      <workItem from="1660227660727" duration="2428000" />
+      <workItem from="1660574184377" duration="2077000" />
+      <workItem from="1660659165606" duration="100000" />
+      <workItem from="1660834578989" duration="1597000" />
+      <workItem from="1660923595619" duration="32000" />
+      <workItem from="1661175854557" duration="3797000" />
+      <workItem from="1661350782607" duration="2020000" />
+      <workItem from="1662563866670" duration="598000" />
+      <workItem from="1662647331643" duration="639000" />
+      <workItem from="1662649218663" duration="1204000" />
+      <workItem from="1662721688505" duration="307000" />
+      <workItem from="1663253205632" duration="846000" />
+      <workItem from="1663599396430" duration="152000" />
+      <workItem from="1663600049037" duration="73000" />
+      <workItem from="1665235918140" duration="2437000" />
+      <workItem from="1665411858939" duration="1464000" />
+      <workItem from="1665499174770" duration="2039000" />
+      <workItem from="1666191101787" duration="1107000" />
+      <workItem from="1666275636893" duration="1257000" />
+      <workItem from="1666621815504" duration="2707000" />
+      <workItem from="1666794446467" duration="103000" />
+      <workItem from="1667055255227" duration="1421000" />
+      <workItem from="1667057901109" duration="1573000" />
+      <workItem from="1667227370250" duration="1227000" />
+      <workItem from="1667487445411" duration="1646000" />
+      <workItem from="1667834536888" duration="399000" />
     </task>
     <servers />
   </component>
@@ -130,33 +221,131 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1658327786730">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1667488356168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1658327786730" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1658327747467">
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1667488356168" />
+    <state x="739" y="378" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1667058715081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658327747467" />
-    <state width="1877" height="383" key="GridCell.Tab.0.bottom" timestamp="1658329554454">
+    <state x="739" y="378" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1667058715081" />
+    <state x="1315" y="375" key="#xdebugger.evaluate" timestamp="1665500014431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1658329554454" />
-    <state width="1877" height="383" key="GridCell.Tab.0.center" timestamp="1658329554454">
+    <state x="1315" y="375" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1665500014431" />
+    <state width="536" height="466" key="DebuggerActiveHint" timestamp="1661176753009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1658329554454" />
-    <state width="1877" height="383" key="GridCell.Tab.0.left" timestamp="1658329554454">
+    <state width="536" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1661176753009" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1666623584620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1658329554454" />
-    <state width="1877" height="383" key="GridCell.Tab.0.right" timestamp="1658329554454">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1666623584620" />
+    <state width="1877" height="358" key="GridCell.Tab.0.bottom" timestamp="1667059487648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1658329554454" />
-    <state x="334" y="214" key="new project wizard" timestamp="1658328373281">
+    <state width="1877" height="358" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1667059487648" />
+    <state width="1877" height="358" key="GridCell.Tab.0.center" timestamp="1667059487648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1658328373281" />
+    <state width="1877" height="358" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1667059487648" />
+    <state width="1877" height="358" key="GridCell.Tab.0.left" timestamp="1667059487648">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1667059487648" />
+    <state width="1877" height="358" key="GridCell.Tab.0.right" timestamp="1667059487648">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1667059487648" />
+    <state width="1877" height="330" key="GridCell.Tab.1.bottom" timestamp="1665501642013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665501642013" />
+    <state width="1877" height="330" key="GridCell.Tab.1.center" timestamp="1665501642013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665501642013" />
+    <state width="1877" height="330" key="GridCell.Tab.1.left" timestamp="1665501642013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665501642013" />
+    <state width="1877" height="330" key="GridCell.Tab.1.right" timestamp="1665501642013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665501642013" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1666623415571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1666623415571" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667920220645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1667920220645" />
+    <state x="636" y="253" width="690" height="534" key="find.popup" timestamp="1661176828018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="253" width="690" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1661176828018" />
+    <state x="334" y="214" key="new project wizard" timestamp="1663599546767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1663599546767" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1667057730288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667057730288" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1661352462083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1661352462083" />
+    <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1666623576450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="311" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1666623576450" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jcl/src/main/java/com/zheng/JCLTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../maven/cangku/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class</url>
+          <line>70</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../maven/cangku/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class</url>
+          <line>348</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../maven/cangku/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class</url>
+          <line>453</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../maven/cangku/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar!/org/slf4j/LoggerFactory.class</url>
+          <line>76</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Slf4jTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../maven/cangku/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar!/org/slf4j/LoggerFactory.class</url>
+          <line>230</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Test.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

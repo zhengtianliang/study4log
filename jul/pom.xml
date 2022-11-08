@@ -8,6 +8,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <description>
+        JUL全称Java util Logging是java原生的日志框架，使用时不需要另外引用第三方类库，相对其他日志框
+        架使用方便，学习简单，能够在小型应用中灵活使用。
+    </description>
 
     <artifactId>jul</artifactId>
 

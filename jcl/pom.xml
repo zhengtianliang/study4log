@@ -9,19 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>log4j</artifactId>
+    <artifactId>jcl</artifactId>
     <description>
-        学习log4j的项目
-        Log4j是Apache下的一款开源的日志框架，通过在项目中使用 Log4J，我们可以控制日志信息输出到控
-        制台、文件、甚至是数据库中。我们可以控制每一条日志的输出格式，通过定义日志的输出级别，可以
-        更灵活的控制日志的输出过程。方便项目的调试。
+        jcl 全称是  Jakarta Commons Logging ，是Apache提供的一个通用日志API。
     </description>
 
     <dependencies>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
         </dependency>
 
         <dependency>
@@ -29,5 +26,14 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+
+        <!-- 导入log4j的依赖，如果不导入的话，jcl默认是jdk14的实现 -->
+<!--        <dependency>-->
+<!--            <groupId>log4j</groupId>-->
+<!--            <artifactId>log4j</artifactId>-->
+<!--            <version>1.2.17</version>-->
+<!--        </dependency>-->
+
     </dependencies>
+
 </project>

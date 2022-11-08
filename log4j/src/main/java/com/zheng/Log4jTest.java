@@ -2,6 +2,7 @@ package com.zheng;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
+import org.apache.log4j.helpers.LogLog;
 import org.junit.Test;
 
 /**
@@ -20,8 +21,11 @@ public class Log4jTest {
     @Test
     public void testQuick(){
 
+        // 开启 log4j 内置日志记录  (log4j自己启动的一些日志)
+//        LogLog.setInternalDebugging(true);
+
         // 初始化配置信息，在入门案例中暂不使用配置文件
-        BasicConfigurator.configure();
+//        BasicConfigurator.configure();
 
         /*
             如果不加上面的 BasicConfigurator.configure();  则会报错：
@@ -33,6 +37,7 @@ public class Log4jTest {
         Logger logger = Logger.getLogger(Log4jTest.class);
         // 日志记录输出
         logger.info("hello log4j");
+        
 
         // 日志的级别
         logger.fatal("fatal"); // 严重错误，一般会造成系统崩溃并终止运行

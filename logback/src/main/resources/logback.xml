@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!--
+        配置集中管理的属性，
+        我们可以直接改属性的value值
+        格式：  ${name}
+    -->
+    <property name="pattern" value="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c %M %L [%thread] %n"></property>
+    <property name="log_dir" value="D:/java/ruanjian"></property>
+    <property name="log_dir" value="D:/java/ruanjian/idea"></property>
+    <!--日志输出格式：
+        %-5level        日志的级别，占5个字符，如果不足5个字符，则向左对齐
+        %d{yyyy-MM-dd HH:mm:ss.SSS}日期
+        %c类的完整名称
+        %M为method
+        %L为行号
+        %thread线程名称%m或者%msg为信息
+        %n换行
+    -->
+    <!--
+    格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %msg：日志消息，%n是换行符-->
+
+    <!-- 控制台输出的appender -->
+    <appender name ="testZheng" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 控制输出流对象，默认是 System.out 改为 System.err -->
+        <target>System.err</target>
+        <!-- 日志消息格式设置 -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 输出一个文件的appender
+    todo: 注意，这个name=file  是不是固定的呢？ 能不能随意的换  -->
+    <appender name="fileTest" class="ch.qos.logback.core.FileAppender">
+<!--        日志文件保存路径-->
+        <file>${log_dir}/logbackTest.log</file>
+<!--        日志消息格式配置-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%-5level%d{yyyy-MM-dd HH:mm:ss.SSS}%c%M%L%thread%n</pattern>
+        </encoder>
+    </appender>
+
+<!--    输出到一个html(表格中去)-->
+    <appender name="file2" class="ch.qos.logback.core.FileAppender">
+        <!--        日志文件保存路径-->
+        <file>${log_dir}/logbackHtml.html</file>
+        <!--        日志消息格式配置-->
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.html.HTMLLayout">
+                <pattern>${pattern}</pattern>
+            </layout>
+        </encoder>
+    </appender>
+
+    <!-- root Logger 的配置-->
+    <appender name="rollFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 日志文件的保存路径 -->
+        <file>${log_dir}/roll_logback.log</file>
+        <!-- 日志消息格式配置-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern}</pattern>
+        </encoder>
+        <!-- 指定拆分规则 （日期和大小）-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 按照时间和压缩声明拆分的文件名 -->
+            <fileNamePattern>${log_dir}/rolling.%d{yyyy-MM-dd}.log%i.gz</fileNamePattern>
+            <!-- 在时间一致(就是单位时间内，上面的话，就是同一天)的前提下，再根据大小来拆分-->
+            <maxFileSize>100KB</maxFileSize>
+        </rollingPolicy>
+
+        <!-- 日志级别过滤器  -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 日志过滤的规则，代表只有ERROR的级别的日志才会被打印出来，error以外的不会打印 -->
+            <level>ERROR</level>
+            <!-- 是error级别，被放行-->
+            <onMatch>ACCEPT</onMatch>
+            <!-- 不是这个级别，被拦截 -->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- 异步日志-->
+    <appender name="async" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 指定某一个需要异步的appender -->
+        <appender-ref ref="rollFile"/>
+    </appender>
+
+
+
+    <!-- -->
+    <!-- -->
+
+    <!-- logback 的拆分appender -->
+    <root level="ALL">
+        <appender-ref ref="testZheng" />
+        <!--        // 如果你的ref中，不是上面定义的appender，则不会将日志输出到文件中去(文件可以被创建，但是内容是空)-->
+<!--        <appender-ref ref="fileTest" />-->
+<!--        <appender-ref ref="file2" />-->
+        <!-- 测试拆分日志的，时间拆分，大小拆分-->
+<!--        <appender-ref ref="rollFile" />-->
+
+        <appender-ref ref="async"/>
+    </root>
+
+    <!-- 自定义logger
+            其中name=com.zheng  则代表，com.zheng 包下的所有类信息，都属于这个logger的子实现
+            level=info  则代表，只有info以及info以上的级别的日志会被打印出来
+            additivity  表示自定义的logger是否继承rootLogger，如果true的话，则root有的功能你也有，
+                        比如说rootLogger的appender有consule和file，那你自定义的也有。不继承的话，就没有
+        -->
+    <logger name="com.zheng" level="info" additivity="falst">
+        <appender-ref ref="console"/>
+    </logger>
+</configuration>

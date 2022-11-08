@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>study4log</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>slf4j</artifactId>
+
+    <description>
+        slfj的测试demo
+    </description>
+
+    <dependencies>
+        <!-- slf4j 的门面，只是提供接口，但是只有接口还不行，还得有具体的实现，才能有记录日志的作用-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.26</version>
+        </dependency>
+
+        <!-- 直接就遵循了 slf4j 的api，不需要引入中间层的适配器去适配。-->
+        <!-- slf4j内置的简单实现，如果一个实现都不写的话，使用日志的时候就会报错:
+          Failed to load class "org.slf4j.impl.StaticLoggerBinder". -->
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-simple</artifactId>-->
+<!--            <version>1.7.21</version>-->
+<!--        </dependency>-->
+
+        <!-- logback的日志实现_classic-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+        <!-- nop 日志开关，引入了这个依赖，则不会打印任何的日志(当然，如果同时有好几个实现，谁在前面就使用谁的实现，如果他在前面，则不打印日志)-->
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-nop</artifactId>-->
+<!--            <version>1.7.25</version>-->
+<!--        </dependency>-->
+
+
+        <!-- 下面的这俩(log4j、jul)，不遵循了 slf4j 的api，需要引入额外的中间层的适配器去适配。-->
+        <!-- 先导入log4j对于slf4j实现的适配器，他由于没有遵循slf4j的原则，所以需要导入适配器-->
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-log4j12</artifactId>-->
+<!--            <version>1.7.12</version>-->
+<!--        </dependency>-->
+        <!-- 正常的log4j的依赖-->
+<!--        <dependency>-->
+<!--            <groupId>log4j</groupId>-->
+<!--            <artifactId>log4j</artifactId>-->
+<!--            <version>1.2.17</version>-->
+<!--        </dependency>-->
+
+
+        <!-- 由于jul是jdk自带的，所以不需要专门的导入jul的依赖，只需要导入slf4j对于jul的适配的依赖就行 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+
+        <!-- 配置slf4j的桥接器 (如果去掉了log4j的maven依赖，又不导入这个依赖的话，那么代码就会标红报错，提升你少包)-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
