@@ -5,30 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10c1d8fd-0859-4768-8289-6be2a709b4be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jcl/jcl.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jcl/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jcl/src/main/java/com/zheng/JCLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jcl/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/main/java/com/zheng/LogbackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/main/resources/logback111.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slf4j/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slf4j/slf4j.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/CommonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Log4BridgeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Slf4jTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slf4j/src/main/java/com/zheng/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slf4j/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4j/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log4j/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4j/src/main/java/com/zheng/Log4jTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/log4j/src/main/java/com/zheng/Log4jTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4j/target/classes/com/zheng/Log4jTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/log4j/target/classes/com/zheng/Log4jTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootLogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_log" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zheng.SpringbootLogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LogbackTest.testQuick" />
@@ -214,11 +201,25 @@
       <workItem from="1667227370250" duration="1227000" />
       <workItem from="1667487445411" duration="1646000" />
       <workItem from="1667834536888" duration="399000" />
+      <workItem from="1667920216748" duration="1020000" />
+      <workItem from="1668003436928" duration="2274000" />
     </task>
+    <task id="LOCAL-00001" summary="two commit">
+      <created>1667920288550</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667920288550</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="two commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="two commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1667488356168">
@@ -233,6 +234,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1315" y="375" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1665500014431" />
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1667920287836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1667920287836" />
     <state width="536" height="466" key="DebuggerActiveHint" timestamp="1661176753009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,6 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1666623415571" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1667920298003">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1667920298003" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667920220645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -285,10 +294,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="253" width="690" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1661176828018" />
-    <state x="334" y="214" key="new project wizard" timestamp="1663599546767">
+    <state x="334" y="214" key="new project wizard" timestamp="1668004614912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1663599546767" />
+    <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1668004614912" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1667057730288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
